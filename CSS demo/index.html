@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .example{
+            font-size: 64px;
+            width: 300px;
+            height: 300px;
+            margin:200px auto;
+            text-align: center;
+            line-height: 300px;
+            cursor: pointer;
+        }
+        .example1{
+            background: linear-gradient(0,#D90368 2px, #108b96 2px) no-repeat,
+                        linear-gradient(90deg,#66C3FF 2px, #66C3FF 2px) no-repeat,
+                        linear-gradient(180deg,#8AC926 2px, #EDE7B1 2px) no-repeat,
+                        linear-gradient(270deg,#F9E784 2px, #F9E784 2px) no-repeat;
+            background-size: 0 2px,2px 0,0 2px,2px 0;
+            transition: ease-in 0.3s;
+            background-position: left top, right top, right bottom, left bottom;
+        }
+        .example1:hover{
+            background-size: 100% 2px,2px 100%,100% 2px,2px 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="example example1">
+    example
+</div>
+</body>
+</html>
